@@ -128,7 +128,7 @@ def main():
                         'Clapping':'R', 'Folding Clothes':'S'})
             
     if home_tab.button("View Test Set"):
-        home_tab.dataframe(test_set)
+        home_tab.dataframe(test_set.sample(60))
         
         #direct user to sidebar
         home_tab.success("Enter Index of Test data from The Sidebar")
