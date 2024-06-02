@@ -7,26 +7,26 @@ from sklearn.preprocessing import LabelEncoder
 import pyarrow as pa
 
 # the test set ??
-data_path = r"C:\Users\Owner\Downloads\deploy_data.xls"
+data_path = r"deploy_data.xls"
 test_set = pd.read_csv(data_path)
 
 # Image links
-im1 = r"C:\Users\Owner\Downloads\Walking_Phone_Accelerometer_Series.png"
-im2 = r"C:\Users\Owner\Downloads\Walking_Phone_Gyroscope_Series.png"
-im3 = r"C:\Users\Owner\Downloads\Walking_Watch_Accelerometer_Series.png"
-im4 = r"C:\Users\Owner\Downloads\Walking_Watch_Gyroscope_Series.png"
-im5 = r"C:\Users\Owner\Downloads\Jogging_Phone_Accelerometer_Series.png"
-im6 = r"C:\Users\Owner\Downloads\Jogging_Phone_Gyroscope_Series.png"
-im7 = r"C:\Users\Owner\Downloads\Jogging_Watch_Accelerometer_Series.png"
-im8 = r"C:\Users\Owner\Downloads\Jogging_Watch_Gyroscope_Series.png"
-im9 = r"C:\Users\Owner\Downloads\Pasta_Phone_Accelerometer_Series.png"
-im10 = r"C:\Users\Owner\Downloads\Pasta_Phone_Gyroscope_Series.png"
-im11 = r"C:\Users\Owner\Downloads\Pasta_Watch_Accelerometer_Series.png"
-im12 = r"C:\Users\Owner\Downloads\Pasta_Watch_Gyroscope_Series.png"
-im13 = r"C:\Users\Owner\Downloads\Typing_Phone_Accelerometer_Series.png"
-im14 = r"C:\Users\Owner\Downloads\Typing_Phone_Gyroscope_Series.png"
-im15 = r"C:\Users\Owner\Downloads\Typing_Watch_Accelerometer_Series.png"
-im16 = r"C:\Users\Owner\Downloads\Typing_Watch_Gyroscope_Series.png"
+im1 = r"Images\Walking_Phone_Accelerometer_Series.png"
+im2 = r"Images\Walking_Phone_Gyroscope_Series.png"
+im3 = r"Images\Walking_Watch_Accelerometer_Series.png"
+im4 = r"Images\Walking_Watch_Gyroscope_Series.png"
+im5 = r"Images\Jogging_Phone_Accelerometer_Series.png"
+im6 = r"Images\Jogging_Phone_Gyroscope_Series.png"
+im7 = r"Images\Jogging_Watch_Accelerometer_Series.png"
+im8 = r"Images\Jogging_Watch_Gyroscope_Series.png"
+im9 = r"Images\Pasta_Phone_Accelerometer_Series.png"
+im10 = r"Images\Pasta_Phone_Gyroscope_Series.png"
+im11 = r"Images\Pasta_Watch_Accelerometer_Series.png"
+im12 = r"Images\Pasta_Watch_Gyroscope_Series.png"
+im13 = r"Images\Typing_Phone_Accelerometer_Series.png"
+im14 = r"Images\Typing_Phone_Gyroscope_Series.png"
+im15 = r"Images\Typing_Watch_Accelerometer_Series.png"
+im16 = r"Images\Typing_Watch_Gyroscope_Series.png"
 
 phone_accel = [im1, im5, im9, im13]
 phone_gyro = [im2, im6, im10, im14]
@@ -45,7 +45,7 @@ pasta_w =[im11, im12]
 typing_w = [im13, im14]
 typing_p = [im15, im16]
 
-model_path = r"C:\Users\Owner\Downloads\classification_model (1).pkl"
+model_path = r"classification_model (1).pkl"
 with open(model_path, 'rb') as model_file:
     classifier = pickle.load(model_file)
 
